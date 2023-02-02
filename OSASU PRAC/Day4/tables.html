@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <!--Tables-->
+    <table>
+        <tr>
+            <td>Osas Ighodaro</td>
+            <td>34</td>
+            <td>100 level</td>
+        </tr>
+
+        <tr>
+            <td>Gani Fashola</td>
+            <td>33</td>
+            <td>200 level</td>
+        </tr>
+
+        <tr>
+            <td>Aisosa Jonathan</td>
+            <td>28</td>
+            <td>300 level</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!--Table headers-->
+    <table>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+        </tr>
+
+        <tr>
+            <th scope="row">21/01/2023</th>
+            <td>Maths</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <th scope="row">22/01/2023</th>
+            <td>science</td>
+            <td>Agriculture</td>
+        </tr>
+        <tr>
+            <th scope="row">22/01/2023</th>
+            <td>Music</td>
+            <td>CRS</td>
+        </tr>
+    </table>
+    <br><br>
+    <!--colspan in a table-->
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">8-9am</th>
+            <th scope="col">9-10am</th>
+            <th scope="col">10-11am</th>
+            <th scope="col">11-12pm</th>
+        </tr>
+        <tr>
+            <th scope="row">Monday</th>
+            <td>Maths</td>
+            <td colspan="2">Break Period</td>
+            <td>CRS</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Tuesday</th>
+            <td colspan="3">English Language</td>
+            <td>Art</td>
+        </tr>
+    </table>
+    <br><br>
+    <!--rowSpan in a table-->
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">8-9am</th>
+            <th scope="col">9-10am</th>
+            <th scope="col">10-11am</th>
+            <th scope="col">11-12pm</th>
+        </tr>
+        <tr>
+            <th scope="row">Monday</th>
+            <td>Maths</td>
+            <td rowspan="2">Break Period</td>
+            <td>CRS</td>
+            <td rowspan="2">Humanities</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Tuesday</th>
+            <td>English Language</td>
+            <td>Music</td>
+            
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!--Long table-->
+    <table>
+        <thead>
+        <tr>
+            <th></th>
+            <th scope="col">8-9am</th>
+            <th scope="col">9-10am</th>
+            <th scope="col">10-11am</th>
+            <th scope="col">11-12pm</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+        <tr>
+            <th scope="row">Monday</th>
+            <td>Maths</td>
+            <td rowspan="2">Break Period</td>
+            <td>CRS</td>
+            <td rowspan="2">Humanities</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Tuesday</th>
+            <td>English Language</td>
+            <td>Music</td>
+            
+        </tr>
+
+        <tr>
+            <th scope="row">Wednesday</th>
+            <td>English Language</td>
+            <td>Music</td>
+            
+        </tr>
+        </tbody>
+        
+        <tfoot>
+        <tr>
+            <th scope="row">Thursday</th>
+            <td>English Language</td>
+            <td>Music</td>
+            <td>Business studies</td>
+            
+        </tr>
+        </tfoot>
+
+    </table>
+    <br><br>
+
+    <!--Cellspacing, width and cellpadding-->
+    <table width="50" cellspacing="20" cellpadding="10">
+        <tr>
+            <th></th>
+            <th scope="col">8-9am</th>
+            <th scope="col">9-10am</th>
+            <th scope="col">10-11am</th>
+            <th scope="col" width="120">11-12pm</th>
+        </tr>
+        <tr>
+            <th scope="row">Monday</th>
+            <td>Maths</td>
+            <td rowspan="2">Break Period</td>
+            <td>CRS</td>
+            <td rowspan="2">Humanities</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Tuesday</th>
+            <td>English Language</td>
+            <td>Music</td>
+            
+        </tr>
+    </table>
+
+    <!--Border and bgcolor-->
+    <table width="50" cellspacing="20" cellpadding="10" border="5" bgcolor="blue">
+        <tr>
+            <th></th>
+            <th scope="col">8-9am</th>
+            <th scope="col">9-10am</th>
+            <th scope="col">10-11am</th>
+            <th scope="col" width="120">11-12pm</th>
+        </tr>
+        <tr>
+            <th scope="row">Monday</th>
+            <td>Maths</td>
+            <td rowspan="2" bgcolor="yellow">Break Period</td>
+            <td>CRS</td>
+            <td rowspan="2" bgcolor="yellow">Humanities</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Tuesday</th>
+            <td>English Language</td>
+            <td>Music</td>
+            
+        </tr>
+    </table>
+</body>
+</html>

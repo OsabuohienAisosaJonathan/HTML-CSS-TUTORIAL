@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Part 2</title>
+</head>
+<body>
+    <!--Using the label tag-->
+    <!-- <label>Name: <input type="text" name="Name"></label>
+    <br>
+    Gender: 
+    <label><input type="radio" name="gender">Female</label>
+    
+    <label><input type="radio" name="gender">Male</label> -->
+    
+
+    <label>Age:</label>
+    <input type="text" name="name" for="age">
+    <br>
+    <label>Gender</label>
+    <input type="radio" name="female">
+    <label for="female">Female</label>
+    <input type="radio" name="male">
+    <label for="male">Male</label>
+
+    <br><br>
+    <!--using the Legend and fieldset tag-->
+    <form action="../dashboard.html" method="post">
+        <fieldset style="width: 13px; color: blue; padding: 20px; margin: auto;">
+            <legend>Signup Here</legend>
+            <label>Name:</label><br>
+            <input type="text" name="name" value="SIIT" readonly><br><br><!--readonly attribute-->
+            <label>Username:</label><br>
+            <input type="text" name="username"><br><br>
+            <label>Email:</label><br>
+            <input type="email" name="email" required="requried"><br><br>
+            <label>Password: </label><br>
+            <input type="password" name="password"><br><br>
+            <!--adding date-->
+            <label for="date">Date of Birth:</label><br><br>
+            <input type="date" name="DOB"><br><br>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+    
+    <!--Form validation-->
+    <form action="../dashboard.html" method="get">
+        <fieldset style="width: 13px; color: blue; padding: 20px; margin: auto;">
+            <legend>Login Here</legend>
+            <label for="username">Username: </label><br>
+            <input type="text" name="username">
+            <br><br>
+            <label for="password">Password: </label><br>
+            <input type="password" name="password" required="required">
+            <br><br>
+            <input type="submit" name="Submit" value="Submit">
+        </fieldset>
+    </form>
+    <br><br>
+    <form action="#" method="get">
+        <fieldset style="width: 13px; color: blue; padding: 20px; margin: auto;">
+            <legend>Search</legend>
+            <input type="search" name="search"><br><br>
+            <input type="submit" name="search" value="submit">
+        </fieldset>
+    </form>
+
+</body>
+</html>

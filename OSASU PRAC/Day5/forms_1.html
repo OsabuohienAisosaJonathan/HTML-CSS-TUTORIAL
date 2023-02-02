@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!--Creating a form-->
+    <form action="https://www.google.com" method="POST">
+        <p>
+            This is a tutorial on creating forms and the items contained in it.
+        </p>
+        <p>Fill in your information into the below form</p>
+        <!--Adding username section to the script-->
+        <p>Username:
+            <input name="username" type="text" size="20" maxlength="10">
+        </p>
+        
+        <!--Adding Password to your script-->
+        <p>password:
+            <input name="password" type="password" size="20" maxlength="10">
+        </p>
+
+        <!--Textarea for comments-->
+        <p>Drop your comment here: 
+        <textarea type="comment" cols="10" rows="8">
+            Enter your complaint here...
+        </textarea>
+        </p>
+
+        <br><br>
+        <!--workign with radio buttons-->
+        <p>Types of Fruits</p>
+        <input type="radio" name="banana" value="Banana" checked="checked"> Banana <br>
+        <input type="radio" name="Apple" value="Apple" > Apple <br>
+        <input type="radio" name="Cashew" value="Cashew"> Cashew
+        
+        <!--working with checkbox buttons-->
+        <p>Types of Drinks</p>
+        <input type="checkbox" name="banana drink" value="Banana drink" checked="checked"> Banana drink <br>
+        <input type="checkbox" name="Apple drink" value="Apple drink" > Apple drink<br>
+        <input type="checkbox" name="5alive drink" value="5Alive drink"> 5Alive drink
+    
+
+        <!--Working with the dropdown button-->
+        <p>The dropdown button usually contains options of a list
+        <select name="Banks" <!--multiple-->>
+            <option value="UBA Bank">UBA Bank</option>
+            <option value="First Bank">First Bank</option>
+            <option value="Access Bank">Access Bank</option>
+            <option value="Access Bank">Wells fargo Bank</option>
+            <option value="Access Bank">Wellington Bank</option>
+            <option value="Access Bank">Oceanic Bank</option>
+        </select>
+        </p>
+
+        <!--File button for uploading-->
+        <p>Please upload your CV of 1mb Max</p>
+        <input type="file" name="CV">
+        <input type="button" value="Upload"> 
+
+        <br>
+        <!--Submit Button-->
+        <p>You can subscribe to our newletter</p>
+        <input type="text" name="mail">
+        <input type="button" value="Subscribe now">
+        
+        <!--image button-->
+        <p>Adding an image button to the page</p>
+        <p>Click to view our contents</p>
+        <input type="text" name="image_btn">
+        <input type="image" src="../images/button.PNG" width="30" height="20">
+
+        <!--Putting an image inside a button-->
+        <p>Image inside a button and hidden control</p>
+        <input type="text" name="books_text">
+        <button>
+            <img src="../images/button.PNG" width="30" height="20">
+        </button>
+        <hr>
+        <!--hidden a button-->
+        <input type="hidden" name="bookmark"> 
+    </form>
+</body>
+</html>
